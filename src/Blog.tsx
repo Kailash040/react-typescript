@@ -7,7 +7,7 @@ interface Props {
 const Blog: React.FC<Props> = ({todo,setTodo, handleAdd}) => {
   return (
     <div>
-      <form  onSubmit={handleAdd} >
+      <form  onSubmit={(e) => handleAdd(e)} >
         <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
         <div className="div">
 <label htmlFor="submit"></label>
