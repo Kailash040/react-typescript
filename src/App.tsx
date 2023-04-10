@@ -8,6 +8,7 @@ function App() {
 
 
   const [list, setList] = useState<Todo[]>([])
+  
   const handleAdd = (e: React.FormEvent) => {
     e.preventDefault();
     if (todo) {
